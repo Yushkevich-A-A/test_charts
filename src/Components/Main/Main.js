@@ -21,17 +21,17 @@ function Main(props) {
                 <EmptyLine />
             </div>
             <div className="main-list">
-                <ChartItem title='dev' data={data.dev} ratio={ratio} offset={offset}>
+                <ChartItem title='dev' data={data.dev}>
                     <ArrowLine />
                 </ChartItem>
-                <ChartItem title='test' data={data.test} ratio={ratio} offset={offset}>
+                <ChartItem title='test' data={data.test}>
                     <ArrowBottom />
                     <ArrowLine />
                 </ChartItem>
-                <ChartItem title='prod' data={data.prod} ratio={ratio} offset={offset}>
+                <ChartItem title='prod' data={data.prod}>
                     <ArrowBottom />
                 </ChartItem>
-                <Standard title='норматив' value={data.norm} ratio={ratio} offset={offset}/>
+                <Standard title='норматив' value={data.norm}/>
             </div>
         </div>
     )

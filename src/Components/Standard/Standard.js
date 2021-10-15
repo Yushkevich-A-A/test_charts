@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import PropTypes from 'prop-types';
-
+import RatioContext from '../../Context/RatioContext';
 import './Standard.css';
 
 function Standard(props) {
-        const { title, value, ratio, offset } = props;
+        const { title, value, } = props;
+        const { ratio, offset } = useContext(RatioContext)
         const height = Number(value / offset) * Number(ratio) || 1;
     return (
         <div className='standard-block-wrapper'>

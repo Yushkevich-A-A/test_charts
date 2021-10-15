@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Chart from './Page/Chart/Chart';
+import ProviderContext from './Providers/ProviderContext/ProviderContext';
 
 const getMaxValue = (data) => {
   const valuesArr = Object.keys(data).filter(item => item !== 'title').map(item => data[item]);
@@ -57,8 +58,9 @@ function App() {
 
   return (
     <div className="App">
-      {console.log(offset)}
-      {data && <Chart ratio={ratio} data={data} devToTest={devToTest} testToProd={testToProd} offset={offset}/>}
+      <ProviderContext ratio={ratio} offset={offset}>
+      {data && <Chart data={data} devToTest={devToTest} testToProd={testToProd}/>}
+      </ProviderContext>
     </div>
   );
 }

@@ -8,9 +8,7 @@ function ChartItem(props) {
     return (
         <div className='chart-item'>
             <div className="empty-block">
-                {
-                    props.children
-                }
+                {props.children}
             </div>
             <ChartBlock {...props}/>
         </div>

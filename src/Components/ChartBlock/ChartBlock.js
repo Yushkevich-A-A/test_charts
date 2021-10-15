@@ -11,9 +11,9 @@ function ChartBlock(props) {
     return (
         <div className='chart-block-wrapper'>
             <div className='chart-block'>
-                <ClientBlock ratio={ratio} value={data.front} offset={offset}/>
-                <ServerBlock ratio={ratio} value={data.back} offset={offset}/>
-                <DBBlock ratio={ratio} value={data.db} offset={offset}/>
+                <ClientBlock value={data.front}/>
+                <ServerBlock value={data.back}/>
+                <DBBlock value={data.db}/>
             </div>
             <h3 className='chart-block-h3'>{title}</h3>
         </div>
