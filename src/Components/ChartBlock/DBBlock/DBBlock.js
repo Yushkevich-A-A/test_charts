@@ -4,12 +4,11 @@ import PropTypes from 'prop-types';
 import './DBBlock.css';
 
 function DBBlock(props) {
-    // const { value, rate } = props;
-    // const height = Math.round(value * rate)
-    const height = 50;
+    const { value, ratio, offset } = props;
+    const height = Number(value / offset) * Number(ratio) || 1;
     return (
         <div className='db-block' style={{height: `${height}px`}}>
-            <p className='db-block-text'>100</p>
+            <p className='db-block-text'>{value}</p>
         </div>
     )
 }

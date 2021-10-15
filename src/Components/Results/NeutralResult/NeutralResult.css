@@ -1,0 +1,26 @@
+.neutral-result-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neutral-result {
+    background-color: #b8a7a3;
+    padding: 4px 8px;
+    border-radius: 50px;
+    display:inline-block;
+}
+
+.neutral-result-text {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    width: 33px;
+}

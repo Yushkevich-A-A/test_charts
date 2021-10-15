@@ -13,10 +13,10 @@ function Chart(props) {
     return (
         <div className='chart'>
             <Header>
-                <Title title={'OS Doors'} />
-                <ButtonMenu />
+                <Title title={props.data.title} />
+                <ButtonMenu handleClick={() => console.log('Привет мир')}/>
             </Header>
-            <Main />
+            <Main {...props}/>
             <Description/>
         </div>
     )

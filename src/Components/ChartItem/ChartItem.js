@@ -5,8 +5,6 @@ import ChartBlock from '../ChartBlock/ChartBlock'
 import './ChartItem.css';
 
 function ChartItem(props) {
-    const { title } = props;
-
     return (
         <div className='chart-item'>
             <div className="empty-block">
@@ -14,7 +12,7 @@ function ChartItem(props) {
                     props.children
                 }
             </div>
-            <ChartBlock title={title}/>
+            <ChartBlock {...props}/>
         </div>
     )
 }

@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import './ClientBlock.css';
 
 function ClientBlock(props) {
-
-    const height = 50;
+    const { value, ratio, offset } = props;
+    const height = Number(Math.round(value / offset)) * Number(ratio);
 
     return (
         <div className='client-block' style={{height: `${height}px`}}>
-            <p className='client-block-text'>100</p>
+            <p className='client-block-text'>{value}</p>
         </div>
     )
 }

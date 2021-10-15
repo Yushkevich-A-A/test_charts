@@ -12,6 +12,10 @@ function Title(props) {
     )
 }
 
+Title.defaultProps = {
+    title: 'Примерный график'
+}
+
 Title.propTypes = {
     title: PropTypes.string.isRequired,
 };
