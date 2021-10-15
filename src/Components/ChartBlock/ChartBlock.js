@@ -7,7 +7,7 @@ import ClientBlock from './ClientBlock/ClientBlock';
 import ServerBlock from './ServerBlock/ServerBlock';
 
 function ChartBlock(props) {
-    const { data, title, ratio, offset  } = props;
+    const { data, title } = props;
     return (
         <div className='chart-block-wrapper'>
             <div className='chart-block'>
@@ -21,7 +21,8 @@ function ChartBlock(props) {
 }
 
 ChartBlock.propTypes = {
-
+    data: PropTypes.object.isRequired,
+    title: PropTypes.string.isRequired,
 };
 
 export default ChartBlock;

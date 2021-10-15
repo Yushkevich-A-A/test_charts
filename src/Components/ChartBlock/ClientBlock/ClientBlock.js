@@ -18,7 +18,7 @@ function ClientBlock(props) {
 }
 
 ClientBlock.propTypes = {
-
+    value: PropTypes.number.isRequired,
 };
 
 export default ClientBlock;

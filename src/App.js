@@ -1,30 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
 import Chart from './Page/Chart/Chart';
 import ProviderContext from './Providers/ProviderContext/ProviderContext';
-
-const getMaxValue = (data) => {
-  const valuesArr = Object.keys(data).filter(item => item !== 'title').map(item => data[item]);
-  const arrData = valuesArr.map( item => (typeof item !== 'object') ? item : getSum(item) );
-  return Math.max(...arrData);
-}
-
-const getSum = (a) => {
-  return Object.keys(a).map( item => a[item]).reduce( (sum, cur) => sum + cur, 0) 
-}
-
-const getOffset = (value) => {
-  if (value < 260) {
-    return 1;
-  }
-  let offset = 1;
-  let result = value;
-  do {
-    offset *= 10;
-  } while (result / offset > 260)
-
-  return offset;
-}
+import jsonData from './Data/Data';
+import getMaxValue from './functions/getMaxValue/getMaxValue';
+import getSum from './functions/getSum/getSum';
+import getOffset from './functions/getOffset/getOffset';
+import './App.css';
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -32,16 +13,17 @@ function App() {
   const [ devToTest, setDevToTest] = useState(0);
   const [ testToProd, setTestToProd] = useState(0);
   const [ offset, setOffset ] = useState(1);
+  const [ urlData, setUrlData ] = useState(jsonData[0]);
 
   useEffect(() => {
     try {
-      fetch('https://rcslabs.ru/ttrp4.json')
+      fetch(urlData.url)
         .then( response => response.json())
         .then( data => setData(data))
     }catch(e) {
       console.log(e.message)
     }
-  }, []);
+  }, [urlData]);
 
 
   useEffect(() => {
@@ -56,10 +38,16 @@ function App() {
     setTestToProd(getSum(data.test) - getSum(data.prod));
   },[data])
 
+  const handleChangeSourse = (id) => {
+    setUrlData(jsonData.find( item => item.id === id))
+  }
+
   return (
     <div className="App">
       <ProviderContext ratio={ratio} offset={offset}>
-      {data && <Chart data={data} devToTest={devToTest} testToProd={testToProd}/>}
+      {data && <Chart data={data} devToTest={devToTest} 
+      testToProd={testToProd} handleChangeSourse={handleChangeSourse} 
+      list={jsonData} selectedUrl={urlData.id}/>}
       </ProviderContext>
     </div>
   );

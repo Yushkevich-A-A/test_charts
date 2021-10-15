@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './Description.css';
 
@@ -30,10 +29,6 @@ function Description(props) {
         </div>
     )
 }
-
-Description.propTypes = {
-
-};
 
 export default Description;
 

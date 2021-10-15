@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './ArrowHorisontalLine.css';
 
@@ -13,10 +12,6 @@ function ArrowHorisontalLine(props) {
 
     )
 }
-
-ArrowHorisontalLine.propTypes = {
-
-};
 
 export default ArrowHorisontalLine;
 

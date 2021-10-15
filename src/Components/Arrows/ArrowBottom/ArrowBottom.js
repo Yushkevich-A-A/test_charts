@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './ArrowBottom.css';
 
@@ -10,10 +9,6 @@ function ArrowBottom(props) {
             <div className="arrow-bottom"></div>
         </div>
     )
-}
-
-ArrowBottom.propTypes = {
-
 }
 
 export default ArrowBottom;

@@ -18,7 +18,7 @@ function NegativeResult(props) {
 }
 
 NegativeResult.propTypes = {
-
+    value: PropTypes.number.isRequired,
 };
 
 export default NegativeResult;

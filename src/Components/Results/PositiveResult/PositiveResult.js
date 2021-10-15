@@ -19,7 +19,7 @@ function PositiveResult(props) {
 }
 
 PositiveResult.propTypes = {
-
+    value: PropTypes.number.isRequired,
 }
 
 export default PositiveResult;

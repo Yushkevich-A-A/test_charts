@@ -11,8 +11,7 @@ import EmptyLine from '../Arrows/EmptyLine/EmptyLine';
 import Results from '../Results/Results';
 
 function Main(props) {
-    const { data, ratio, offset, devToTest, testToProd } = props;
-    console.log(data);
+    const { data, devToTest, testToProd } = props;
     return (
         <div className='main-field'>
             <div className="result-block">
@@ -38,7 +37,9 @@ function Main(props) {
 }
 
 Main.propTypes = {
-
+    data: PropTypes.object.isRequired,
+    devToTest: PropTypes.number.isRequired,
+    testToProd: PropTypes.number.isRequired,
 }
 
 export default Main;

@@ -25,7 +25,7 @@ function Results(props) {
 }
 
 Results.propTypes = {
-
+    result: PropTypes.number.isRequired,
 }
 
 export default Results;

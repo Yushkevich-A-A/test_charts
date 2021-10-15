@@ -1,0 +1,12 @@
+.json-data-item {
+    padding: 5px 10px;
+}
+
+.json-data-item:nth-child(n + 2) {
+    border-top: 1px solid #898290;
+}
+
+.selected {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}

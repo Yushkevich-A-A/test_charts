@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './ArrowLine.css';
 
@@ -10,10 +9,6 @@ function ArrowLine(props) {
         </div>
     )
 }
-
-ArrowLine.propTypes = {
-
-};
 
 export default ArrowLine;
 

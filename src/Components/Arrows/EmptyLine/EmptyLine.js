@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import './EmptyLine.css';
 
 function EmptyLine(props) {
@@ -9,10 +9,6 @@ function EmptyLine(props) {
         </div>
     )
 }
-
-EmptyLine.propTypes = {
-
-};
 
 export default EmptyLine;
 

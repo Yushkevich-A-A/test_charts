@@ -13,7 +13,8 @@ function ProviderContext(props) {
 }
 
 ProviderContext.propTypes = {
-
+    ratio: PropTypes.number.isRequired,
+    offset: PropTypes.number.isRequired,
 }
 
 export default ProviderContext

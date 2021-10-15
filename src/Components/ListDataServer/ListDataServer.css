@@ -1,0 +1,12 @@
+.json-data-list {
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    overflow: hidden;
+    border: 1px solid #898290;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+}

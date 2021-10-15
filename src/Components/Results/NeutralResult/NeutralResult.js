@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './NeutralResult.css';
 
@@ -14,10 +13,6 @@ function NeutralResult(props) {
         </div>
     )
 }
-
-NeutralResult.propTypes = {
-
-};
 
 export default NeutralResult;
 

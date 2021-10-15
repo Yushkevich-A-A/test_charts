@@ -15,7 +15,7 @@ function DBBlock(props) {
 }
 
 DBBlock.propTypes = {
-
+    value: PropTypes.number.isRequired,
 };
 
 export default DBBlock;

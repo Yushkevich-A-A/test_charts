@@ -18,7 +18,8 @@ function Standard(props) {
 }
 
 Standard.propTypes = {
-
+    value: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
 };
 
 export default Standard;

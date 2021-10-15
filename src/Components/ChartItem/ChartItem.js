@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import ChartBlock from '../ChartBlock/ChartBlock'
 
 import './ChartItem.css';
@@ -13,10 +12,6 @@ function ChartItem(props) {
             <ChartBlock {...props}/>
         </div>
     )
-}
-
-ChartItem.propTypes = {
-
 }
 
 export default ChartItem
