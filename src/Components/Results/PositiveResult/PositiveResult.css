@@ -1,0 +1,35 @@
+.positive-result-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.positive-result {
+    background-color: #00cc99;
+    padding: 4px 8px;
+    border-radius: 50px;
+    display:inline-block;
+}
+
+.positive-result-text {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.positive-result::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url(./../Images/VectorUp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 3px;
+}

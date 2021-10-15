@@ -1,0 +1,11 @@
+.server-block {
+    background-color: #AA6FAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.server-block-text {
+    font-weight: 700;
+    color: white;
+}

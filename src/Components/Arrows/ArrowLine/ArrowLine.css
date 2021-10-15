@@ -1,0 +1,13 @@
+.arrow-line-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.arrow-line {
+    width: 1px;
+    background-color: #898290;
+    height: 100%;
+}

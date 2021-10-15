@@ -1,0 +1,15 @@
+.chart-block-wrapper {
+  width: 80px;  
+}
+
+
+.chart-block {
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chart-block-h3 {
+    margin-top: 15px;
+    font-size: 10px;
+}

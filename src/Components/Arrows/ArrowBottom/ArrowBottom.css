@@ -1,0 +1,36 @@
+.arrow-bottom-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.line {
+    width: 1px;
+    background-color: #898290;
+    height: 100%;
+}
+
+.arrow-bottom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.arrow-bottom::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-right: 1px solid #898190;
+    border-bottom: 1px solid #898290;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(45deg);
+}

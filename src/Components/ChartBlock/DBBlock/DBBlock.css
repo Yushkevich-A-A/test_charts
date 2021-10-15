@@ -1,0 +1,11 @@
+.db-block {
+    background-color: #E85498;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.db-block-text {
+    font-weight: 700;
+    color: white;
+}

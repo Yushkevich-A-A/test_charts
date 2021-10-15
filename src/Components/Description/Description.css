@@ -1,0 +1,35 @@
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.description-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.description-text {
+    font-size: 10px;
+}
+
+.client-color {
+    background-color: #4AB6E8;
+}
+
+.server-color {
+    background-color: #AA6FAC;
+}
+
+.db-color {
+    background-color: #E85498;
+}

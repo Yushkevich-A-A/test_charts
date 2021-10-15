@@ -1,0 +1,11 @@
+.client-block {
+    background-color: #4AB6E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-block-text {
+    font-weight: 700;
+    color: white;
+}

@@ -1,0 +1,17 @@
+.arrow-horisontal-line-wrapper {
+    width: 100%;
+}
+
+.arrow-horisontal-line-wrapper:first-child .arrow-horisontal-line {
+    margin-right: 10px;
+}
+
+.arrow-horisontal-line-wrapper:nth-child( 0n + 2 ) .arrow-horisontal-line {
+    margin-left: 10px;
+}
+
+.arrow-horisontal-line {
+    height: 1px;
+    background-color: #898290;
+    position: relative;
+}

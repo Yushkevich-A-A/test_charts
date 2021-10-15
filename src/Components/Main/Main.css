@@ -1,0 +1,18 @@
+.main-field {
+    padding: 45px;
+}
+
+.main-list {
+    height: 335px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.result-block {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,0 +1,27 @@
+.standard-block-wrapper {
+    width: 80px;  
+  }
+  
+  .standard-block {
+      height: 200px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: repeating-linear-gradient(-45deg, #fff, #fff 10px, #4AB6E8 10px, #4AB6E8 20px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .standard-block-text {
+    padding: 5px 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #fff;
+}
+  .standard-block-h3 {
+      margin-top: 15px;
+      font-size: 10px;
+  }
+
+

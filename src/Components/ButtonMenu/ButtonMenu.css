@@ -1,0 +1,22 @@
+.button-menu {
+    width: 13px;
+    height: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-menu::before,
+.button-menu::after {
+    content: '';
+    display: block;
+}
+
+.button-menu::before,
+.button-menu::after,
+.button-point {
+    width: 3px;
+    height: 3px;
+    background-color: #898290;
+    border-radius: 50%;
+}
