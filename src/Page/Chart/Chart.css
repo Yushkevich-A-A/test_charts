@@ -1,5 +1,6 @@
 .chart {
-    max-width: 590px;
+    max-width: 1024px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
 }
